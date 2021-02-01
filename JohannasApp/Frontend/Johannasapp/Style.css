@@ -1,0 +1,145 @@
+html{
+    background: url(https://images.pexels.com/photos/3790639/pexels-photo-3790639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: verdana;
+} 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  } 
+  .hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0, 4), rgba(0, 0, 0, 0, 4)),
+      url(banner.jp); 
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:  rgb(151, 118, 96);
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    background-image: radial-gradient(white 70%, #a6762f) ;
+    overflow: hidden;
+  }
+  .button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 1px rgb(145, 143, 143);
+    border-radius: 25px;
+  }
+  .toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+  }
+  #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #02021f1f, #0009131f);
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ff61241f;
+    outline: none;
+    background: transparent;
+  }
+  .submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: -o-linear-gradient(to right, #02021f1f, #0009131f);
+    outline: none;
+    border-radius: 30px;
+  }
+  .check-box {
+    margin: 30px 10px 30px 0;
+  }
+  span {
+    color:  rgb(151, 118, 96);
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+  }
+  #loginForm {
+    left: 50px;
+  }
+  #registerForm {
+    left: 450px;
+  }
+  #menu{
+      background-image: radial-gradient(white 50%, #a6762f) ;
+      border: solid;
+      border-color: rgb(151, 118, 96);
+      border-radius: 25px;
+      margin: 20px ;
+      box-shadow: 0px 0px 10px 1px black;
+  }
+
+  .menu-list{
+      display: inline;
+  }
+
+  .menu-item{
+      display: inline-block;
+      margin: 0px 100px;
+  }
+  .menu-link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color:black;
+  }
+  .menu-link:hover{
+    color:rgb(151, 118, 96);
+  }
+  #content{
+    background-image: radial-gradient(white 50%, #a6762f) ;
+    border: solid;
+    border-color: rgb(151, 118, 96);
+    border-radius: 25px;
+    width: 1000px;
+    height: 550px;
+    margin: 20px ;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px black;
+  }
+  
+  .header{
+    color:rgb(20, 20, 20);
+  }

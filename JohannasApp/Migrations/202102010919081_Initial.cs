@@ -11,14 +11,16 @@
                 "dbo.Expenses",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.Int(nullable: false),
                         Name = c.String(),
                         Price = c.Single(nullable: false),
-                        User_UserName = c.String(maxLength: 128),
+                        User_Username = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Users", t => t.User_UserName)
-                .Index(t => t.User_UserName);
+                .ForeignKey("dbo.ExpensesCategories", t => t.Id)
+                .ForeignKey("dbo.Users", t => t.User_Username)
+                .Index(t => t.Id)
+                .Index(t => t.User_Username);
             
             CreateTable(
                 "dbo.ExpensesCategories",
@@ -26,29 +28,26 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        Expenses_Id = c.Int(),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Expenses", t => t.Expenses_Id)
-                .Index(t => t.Expenses_Id);
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.Users",
                 c => new
                     {
-                        UserName = c.String(nullable: false, maxLength: 128),
+                        Username = c.String(nullable: false, maxLength: 128),
                         Password = c.String(),
                     })
-                .PrimaryKey(t => t.UserName);
+                .PrimaryKey(t => t.Username);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Expenses", "User_UserName", "dbo.Users");
-            DropForeignKey("dbo.ExpensesCategories", "Expenses_Id", "dbo.Expenses");
-            DropIndex("dbo.ExpensesCategories", new[] { "Expenses_Id" });
-            DropIndex("dbo.Expenses", new[] { "User_UserName" });
+            DropForeignKey("dbo.Expenses", "User_Username", "dbo.Users");
+            DropForeignKey("dbo.Expenses", "Id", "dbo.ExpensesCategories");
+            DropIndex("dbo.Expenses", new[] { "User_Username" });
+            DropIndex("dbo.Expenses", new[] { "Id" });
             DropTable("dbo.Users");
             DropTable("dbo.ExpensesCategories");
             DropTable("dbo.Expenses");

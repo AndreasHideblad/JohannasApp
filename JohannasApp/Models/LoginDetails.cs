@@ -6,12 +6,10 @@ using System.Web;
 
 namespace JohannasApp.Models
 {
-    public class User
+    public class LoginDetails
     {
         [Key]
-        public string Username { get; set; }
+        public string UserName { get; set; }
         public string Password { get; set; }
-        public virtual ICollection<Expenses> Expenses { get; set; }
-
     }
 }

@@ -28,8 +28,7 @@ namespace JohannasApp.Controllers
         // POST api/values
         public void Post([FromBody] User value)
         {
-            var userManager = new UserManager();
-            userManager.RegisterUser(value);
+            
         }
 
         // PUT api/values/5
