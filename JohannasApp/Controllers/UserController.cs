@@ -13,15 +13,28 @@ namespace JohannasApp.Controllers
     [RoutePrefix("user")]
 
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-
-    public class LoginController : ApiController
+    public class UserController : ApiController
     {
-        [HttpGet]
+        [HttpPost]
+        [Route("register")]
+        public IHttpActionResult Register([FromBody]User user)
+        {
+            bool ok = UserManager.Instance.CreateUser(user);
+            if(ok == true)
+            {
+                return Ok();
+            }
+            else
+            {
+                return Conflict();
+            }
+        }
+
         [HttpPost]
         [Route("login")]
-        public IHttpActionResult Login([FromBody]LoginDetails loginRequest)
+        public IHttpActionResult Login([FromBody] LoginDetails loginRequest)
         {
-            var user = UserManager.Instance.GetUserByUsername(loginRequest.UserName);
+            var user = UserManager.Instance.GetUserByUsername(loginRequest.Username);
             if (user != null && loginRequest.Password == user.Password)
             {
                 return Ok();

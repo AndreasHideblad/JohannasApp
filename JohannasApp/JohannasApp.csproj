@@ -169,15 +169,14 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202102010919081_Initial.cs" />
-    <Compile Include="Migrations\202102010919081_Initial.designer.cs">
-      <DependentUpon>202102010919081_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202102011330419_Initial.cs" />
+    <Compile Include="Migrations\202102011330419_Initial.designer.cs">
+      <DependentUpon>202102011330419_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\JohannaContext.cs" />
     <Compile Include="Managers\ExpensesCategoryManager.cs" />
@@ -274,8 +273,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202102010919081_Initial.resx">
-      <DependentUpon>202102010919081_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202102011330419_Initial.resx">
+      <DependentUpon>202102011330419_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

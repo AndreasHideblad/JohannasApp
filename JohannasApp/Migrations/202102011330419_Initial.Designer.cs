@@ -13,7 +13,7 @@ namespace JohannasApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202102010919081_Initial"; }
+            get { return "202102011330419_Initial"; }
         }
         
         string IMigrationMetadata.Source

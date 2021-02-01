@@ -42,7 +42,8 @@ namespace JohannasApp.Managers
         {
             using (var db = new JohannaContext())
             {
-                return db.Users.Find(username);
+                var user = db.Users.Find(username);
+                return user;
             }
         }
     }
