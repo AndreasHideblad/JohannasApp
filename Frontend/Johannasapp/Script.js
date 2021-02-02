@@ -15,16 +15,15 @@ loginForm.onsubmit = (e) => {
     },
     body: JSON.stringify(logObject)
   })
-  .then(response => 
-  // .then(window.location = "Homepage.html")
-  {if(response === Response.ok)
-  {
-    window.location = "Homepage.html"
-  }
-  else 
-  {
-    console.log(response.json())
-  }})
+    .then(response => {
+      if (response.ok) {
+        window.location.href = "Homepage.html"
+      }
+      else {
+        alert("Failed to login.")
+        console.log(response)
+      }
+    })
 }
 
 registerForm.onsubmit = (e) => {
