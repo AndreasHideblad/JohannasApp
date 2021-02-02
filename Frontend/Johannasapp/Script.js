@@ -2,10 +2,6 @@ loginForm.onsubmit = (e) => {
   e.preventDefault()
   console.log(e)
 
-  // let logObject = {
-  //   username: "aaa",
-  //   password: "bbb"
-  // }
   let logObject = {
     username: e.target[0].value,
     password: e.target[1].value
@@ -17,27 +13,18 @@ loginForm.onsubmit = (e) => {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(logObject),
-    
+    body: JSON.stringify(logObject)
   })
-  // let statusCode = Context.response.meta.statusCode
-  // assert( statusCode == 200)
-  
-
-    // .then(response => {
-      // if (Http.status === 200)
-      //   location.replace("/Johannasapp/Homepage.html")
-      // else{
-      //   alert("Fel")
-    //   }
-
-    // })
-    // .then(data => {
-    //   console.log('Success:', data);
-    // })
-    // .catch((error) => {
-    //   console.error('Error:', error);
-    // })
+  .then(response => 
+  // .then(window.location = "Homepage.html")
+  {if(response === Response.ok)
+  {
+    window.location = "Homepage.html"
+  }
+  else 
+  {
+    console.log(response.json())
+  }})
 }
 
 registerForm.onsubmit = (e) => {
