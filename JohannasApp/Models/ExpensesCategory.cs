@@ -9,8 +9,8 @@ namespace JohannasApp.Models
     public class ExpensesCategory
     {
         [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public virtual Expenses Expenses { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public virtual Expenses expenses { get; set; }
     }
 }

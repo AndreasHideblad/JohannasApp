@@ -11,29 +11,29 @@ using JohannasApp.Models;
 namespace JohannasApp.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-
-    public class ExpensesController : ApiController
+    [RoutePrefix("Categories")]
+    public class ExpensesCategoryController : ApiController
     {
         //[Route("get")]
-        [HttpGet]
-        public Expenses expensesGet(int id)
+        [HttpGet] 
+        public ExpensesCategory expensesCategoriesGet(int id)
         {
-            return ExpensesManager.Instance.GetExpensesById(id);
+            return ExpensesCategoryManager.Instance.GetExpensesCategoryById(id);
         }
 
         //[Route("create")]
         [HttpPost]
-        public void expensesPost([FromBody]Expenses expense)
+        public void expensesCategoriesPost([FromBody]ExpensesCategory categories)
         {
-            ExpensesManager.Instance.CreateExpenses(expense);
+            ExpensesCategoryManager.Instance.CreateExpensesCategory(categories);
         }
 
-        // PUT: api/Expenses/5
+        // PUT: api/ExpensesCategory/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/Expenses/5
+        // DELETE: api/ExpensesCategory/5
         public void Delete(int id)
         {
         }

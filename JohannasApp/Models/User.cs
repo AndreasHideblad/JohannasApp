@@ -9,9 +9,9 @@ namespace JohannasApp.Models
     public class User
     {
         [Key]
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public virtual ICollection<Expenses> Expenses { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
+        public virtual ICollection<Expenses> expenses { get; set; }
 
     }
 }

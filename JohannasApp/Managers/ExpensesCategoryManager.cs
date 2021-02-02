@@ -8,7 +8,19 @@ namespace JohannasApp.Managers
 {
     public class ExpensesCategoryManager
     {
-        public ExpensesCategory GetExpensesCategoryById(string id)
+        private static ExpensesCategoryManager _instance;
+        public static ExpensesCategoryManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new ExpensesCategoryManager();
+                return _instance;
+            }
+        }
+        private ExpensesCategoryManager() { }
+
+        public ExpensesCategory GetExpensesCategoryById(int id)
         {
             using (var db = new JohannaContext())
             {

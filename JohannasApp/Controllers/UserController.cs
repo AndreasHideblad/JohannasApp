@@ -32,10 +32,10 @@ namespace JohannasApp.Controllers
 
         [HttpPost]
         [Route("login")]
-        public IHttpActionResult Login([FromBody] LoginDetails loginRequest)
+        public IHttpActionResult Login([FromBody]LoginDetails loginRequest)
         {
-            var user = UserManager.Instance.GetUserByUsername(loginRequest.Username);
-            if (user != null && loginRequest.Password == user.Password)
+            var user = UserManager.Instance.GetUserByUsername(loginRequest.username);
+            if (user != null && loginRequest.password == user.password)
             {
                 return Ok();
             }
