@@ -11,6 +11,6 @@ namespace JohannasApp.Models
         [Key]
         public int id { get; set; }
         public string name { get; set; }
-        public virtual Expenses expenses { get; set; }
+        public virtual ICollection<Expenses> expenses { get; set; }
     }
 }
