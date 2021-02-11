@@ -23,18 +23,6 @@ namespace JohannasApp.Controllers
             return ExpensesCategoryManager.Instance.GetExpensesCategoryById(id);
         }
 
-        //public IHttpActionResult GetExpensesCategories(int id)
-        //{
-        //    var expensesCategory = ExpensesCategoryManager.Instance.GetExpensesCategoryById(id);
-        //    if (expensesCategory == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return Ok(expensesCategory);
-        //}
-
-
         [Route("create")]
         [HttpPost]
         public void ExpensesCategoriesPost([FromBody]ExpensesCategory categories)
