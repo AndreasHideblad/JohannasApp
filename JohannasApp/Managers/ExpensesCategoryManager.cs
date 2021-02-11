@@ -1,6 +1,7 @@
 ﻿using JohannasApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Web;
 
@@ -29,18 +30,23 @@ namespace JohannasApp.Managers
             }
         }
 
-        //public IList<ExpensesCategory> GetExpensesCategoryById(int id)
-        //{
-        //    IList<ExpensesCategory> expensesCategories = null;
+        private List<ExpensesCategory> Categories = new List<ExpensesCategory>();
+        public IEnumerable<ExpensesCategory> GetAll()
+        {
+            using (var db = new JohannaContext())
+            {
+                return Categories;
+            }
+        }
 
+        //public List<ExpensesCategory> GetExpensesCategories()
+        //{
         //    using (var db = new JohannaContext())
         //    {
-        //        expensesCategories = db.ExpensesCategories.Select(s => new ExpensesCategory()
-        //        {
-        //            id = s.id
-        //        }).ToList<ExpensesCategory>();
+        //        //var getExpenses = db.ExpensesCategories.Include(e => e.).ToList();
+                
+        //        return db.ExpensesCategories.Include(e => e.)
         //    }
-        //    return expensesCategories;
         //}
 
         public void CreateExpensesCategory(ExpensesCategory expensesCategory)

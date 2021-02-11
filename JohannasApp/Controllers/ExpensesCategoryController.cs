@@ -2,6 +2,7 @@
 using JohannasApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -16,6 +17,13 @@ namespace JohannasApp.Controllers
 
     public class ExpensesCategoryController : ApiController
     {
+        //[Route("get")]
+        //[HttpGet]
+        //public List<ExpensesCategory> GetCategories()
+        //{
+        //    return ExpensesCategoryManager.Instance.GetExpensesCategories();
+        //}
+
         [Route("get/{id}")]
         [HttpGet] 
         public ExpensesCategory ExpensesCategoriesGet(int id)

@@ -16,6 +16,7 @@ namespace JohannasApp
 
         public DbSet<User> Users { get; set; }
         public DbSet<Expenses> Expenses { get; set; }
+        public DbSet<Income> Incomes { get; set; }
         public DbSet<ExpensesCategory> ExpensesCategories { get; set; }
     }
 }

@@ -171,16 +171,23 @@
     <Compile Include="Controllers\ExpensesCategoryController.cs" />
     <Compile Include="Controllers\ExpensesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IncomeController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Managers\IncomeManager.cs" />
     <Compile Include="Migrations\202102110941577_Initial.cs" />
     <Compile Include="Migrations\202102110941577_Initial.designer.cs">
       <DependentUpon>202102110941577_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102111514269_Added income.cs" />
+    <Compile Include="Migrations\202102111514269_Added income.designer.cs">
+      <DependentUpon>202102111514269_Added income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Income.cs" />
     <Compile Include="Models\JohannaContext.cs" />
     <Compile Include="Managers\ExpensesCategoryManager.cs" />
     <Compile Include="Managers\ExpensesManager.cs" />
@@ -278,6 +285,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102110941577_Initial.resx">
       <DependentUpon>202102110941577_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102111514269_Added income.resx">
+      <DependentUpon>202102111514269_Added income.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
