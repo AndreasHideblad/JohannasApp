@@ -38,7 +38,6 @@ registerForm.onsubmit = (e) => {
   fetch('https://localhost:44399/user/register', {
     method: 'POST',
     headers: {
-      //'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(regObject)

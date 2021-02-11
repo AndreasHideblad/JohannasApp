@@ -12,7 +12,7 @@ namespace JohannasApp.Models
         public int id { get; set; }
         public string name { get; set; }
         public float price { get; set; }
-        [Required]
+        //[Required]
         public virtual ExpensesCategory expensesCategories { get; set; }
         public virtual User user { get; set; }
     }

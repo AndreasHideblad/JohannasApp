@@ -29,6 +29,20 @@ namespace JohannasApp.Managers
             }
         }
 
+        //public IList<ExpensesCategory> GetExpensesCategoryById(int id)
+        //{
+        //    IList<ExpensesCategory> expensesCategories = null;
+
+        //    using (var db = new JohannaContext())
+        //    {
+        //        expensesCategories = db.ExpensesCategories.Select(s => new ExpensesCategory()
+        //        {
+        //            id = s.id
+        //        }).ToList<ExpensesCategory>();
+        //    }
+        //    return expensesCategories;
+        //}
+
         public void CreateExpensesCategory(ExpensesCategory expensesCategory)
         {
             using (var db = new JohannaContext())

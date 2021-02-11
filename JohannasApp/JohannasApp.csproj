@@ -171,14 +171,15 @@
     <Compile Include="Controllers\ExpensesCategoryController.cs" />
     <Compile Include="Controllers\ExpensesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202102021626435_initial.cs" />
-    <Compile Include="Migrations\202102021626435_initial.designer.cs">
-      <DependentUpon>202102021626435_initial.cs</DependentUpon>
+    <Compile Include="Migrations\202102110941577_Initial.cs" />
+    <Compile Include="Migrations\202102110941577_Initial.designer.cs">
+      <DependentUpon>202102110941577_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\JohannaContext.cs" />
     <Compile Include="Managers\ExpensesCategoryManager.cs" />
@@ -275,8 +276,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202102021626435_initial.resx">
-      <DependentUpon>202102021626435_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202102110941577_Initial.resx">
+      <DependentUpon>202102110941577_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,29 +1,43 @@
-﻿using System;
+﻿using JohannasApp.Managers;
+using JohannasApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using JohannasApp.Managers;
-using JohannasApp.Models;
 
 namespace JohannasApp.Controllers
 {
+    [RoutePrefix("ExpensesCategories")]
+
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [RoutePrefix("Categories")]
+
     public class ExpensesCategoryController : ApiController
     {
-        //[Route("get")]
+        [Route("get/{id}")]
         [HttpGet] 
-        public ExpensesCategory expensesCategoriesGet(int id)
+        public ExpensesCategory ExpensesCategoriesGet(int id)
         {
             return ExpensesCategoryManager.Instance.GetExpensesCategoryById(id);
         }
 
-        //[Route("create")]
+        //public IHttpActionResult GetExpensesCategories(int id)
+        //{
+        //    var expensesCategory = ExpensesCategoryManager.Instance.GetExpensesCategoryById(id);
+        //    if (expensesCategory == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return Ok(expensesCategory);
+        //}
+
+
+        [Route("create")]
         [HttpPost]
-        public void expensesCategoriesPost([FromBody]ExpensesCategory categories)
+        public void ExpensesCategoriesPost([FromBody]ExpensesCategory categories)
         {
             ExpensesCategoryManager.Instance.CreateExpensesCategory(categories);
         }

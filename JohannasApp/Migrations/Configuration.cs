@@ -24,25 +24,25 @@
             //var ICA = new Expenses { id = 1, name = "ICA", price = 200, new ExpensesCategories() { 1 } };
             //context.Expenses.AddOrUpdate(ICA);
 
-            context.Users.AddOrUpdate(new User 
-            { 
-                username = "andreas@hideblad.se", 
-                password = "11223344" 
-            });
+            //context.Users.AddOrUpdate(new User 
+            //{ 
+            //    username = "andreas@hideblad.se", 
+            //    password = "11223344" 
+            //});
 
-            context.Expenses.AddOrUpdate(new Expenses
-            {
-                id = 1,
-                name = "ica",
-                price = 200,
-                expensesCategories = ExpensesCategoryManager.Instance.GetExpensesCategoryById(1)
-            });
+            //context.Expenses.AddOrUpdate(new Expenses
+            //{
+            //    id = 1,
+            //    name = "ica",
+            //    price = 200,
+            //    expensesCategories = ExpensesCategoryManager.Instance.GetExpensesCategoryById(1)
+            //});
 
-            context.ExpensesCategories.AddOrUpdate(new ExpensesCategory
-            {
-                id = 1,
-                name = "Mat"
-            });
+            //context.ExpensesCategories.AddOrUpdate(new ExpensesCategory
+            //{
+            //    id = 1,
+            //    name = "Mat"
+            //});
 
             //  This method will be called after migrating to the latest version.
 

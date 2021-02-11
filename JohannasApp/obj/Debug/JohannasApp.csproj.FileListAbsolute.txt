@@ -90,8 +90,6 @@ C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp
 C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\bin\System.Web.Cors.dll
 C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\bin\System.Web.Http.Cors.dll
 C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\bin\System.Web.Http.Cors.xml
-C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.Initial.resources
-C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.csproj.GenerateResource.cache
 C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\bin\JohannasApp.dll.config
 C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\bin\JohannasApp.dll
 C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\bin\JohannasApp.pdb
@@ -186,3 +184,5 @@ C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\obj\Debug\Jo
 C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.pdb
 C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.initial.resources
 C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.csproj.GenerateResource.cache
+C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.Initial.resources
+C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.csproj.GenerateResource.cache
