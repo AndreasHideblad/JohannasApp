@@ -7,7 +7,7 @@ createExpCategoryForm.onsubmit = (e) => {
       name: e.target[1].value
     }
   
-    fetch('https://localhost:44399/expensesCategories/create', {
+    fetch('https://localhost:44399/ExpensesCategories', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ createExpCategoryForm.onsubmit = (e) => {
       name: e.target[1].value
     }
   
-    fetch('https://localhost:44399/expensesCategories/get', {
+    fetch('https://localhost:44399/ExpensesCategories', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'

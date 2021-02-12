@@ -20,12 +20,12 @@ namespace JohannasApp.Managers
         }
         private IncomeManager() { }
 
-        public Income GetIncomeById(int id)
+        public List<Income> GetIncome()
         {
             using (var db = new JohannaContext())
             {
-                var income = db.Incomes.Find(id);
-                return income;
+                var incomes= db.Incomes.ToList();
+                return incomes;
             }
         }
 

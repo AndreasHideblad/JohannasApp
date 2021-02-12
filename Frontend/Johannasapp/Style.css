@@ -143,3 +143,13 @@ html{
   .header{
     color:rgb(20, 20, 20);
   }
+
+  .divTable {
+    height: 40px;
+    width: 25%;
+    border: 2px solid black;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }

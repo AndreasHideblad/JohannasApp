@@ -15,10 +15,12 @@ namespace JohannasApp.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class IncomeController : ApiController
     {
-        // GET: api/Income
-        public IEnumerable<string> Get()
+        [Route("")]
+        [HttpGet]
+        public List<Income> GetIncome()
         {
-            return new string[] { "value1", "value2" };
+            var incomes = IncomeManager.Instance.GetIncome();
+            return incomes;
         }
 
         // GET: api/Income/5
