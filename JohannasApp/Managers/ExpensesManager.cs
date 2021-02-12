@@ -1,7 +1,8 @@
 ﻿using JohannasApp.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity.Validation;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
@@ -30,11 +31,20 @@ namespace JohannasApp.Managers
             }
         }
 
+        public List<Expenses> GetExpenses()
+        {
+            using (var db = new JohannaContext())
+            {
+                var expenses = db.Expenses.Include(e => e.expensesCategories).ToList();
+                return expenses;
+            }
+        }
+
         public void CreateExpenses(Expenses expenses)
         {
             using (var db = new JohannaContext())
             {
-                db.Expenses.Add(expenses);
+                db.Expenses.AddOrUpdate(expenses);
                 db.SaveChanges();
             }        
         }

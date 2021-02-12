@@ -27,7 +27,7 @@ namespace JohannasApp.Controllers
             return "value";
         }
 
-        [Route("create")]
+        [Route("")]
         [HttpPost]
         public void IncomePost([FromBody] Income income)
         {

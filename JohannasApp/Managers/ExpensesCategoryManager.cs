@@ -39,15 +39,15 @@ namespace JohannasApp.Managers
             }
         }
 
-        //public List<ExpensesCategory> GetExpensesCategories()
-        //{
-        //    using (var db = new JohannaContext())
-        //    {
-        //        //var getExpenses = db.ExpensesCategories.Include(e => e.).ToList();
-                
-        //        return db.ExpensesCategories.Include(e => e.)
-        //    }
-        //}
+        public List<ExpensesCategory> GetExpensesCategories()
+        {
+            using (var db = new JohannaContext())
+            {
+                //var categories = db.ExpensesCategories.Include("Expenses").ToList();
+                return db.ExpensesCategories.ToList();
+
+            }
+        }
 
         public void CreateExpensesCategory(ExpensesCategory expensesCategory)
         {

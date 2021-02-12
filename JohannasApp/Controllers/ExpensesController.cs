@@ -16,21 +16,22 @@ namespace JohannasApp.Controllers
 
     public class ExpensesController : ApiController
     {
-        //[Route("get")]
-        //[HttpGet]
-        //public Expenses ExpensesGet(int id)
-        //{
-        //    return ExpensesManager.Instance.GetExpensesById(id);
-        //}
-
-        [Route("get/{id}")]
+        [Route("")]
         [HttpGet]
-        public Expenses ExpensesGet(int id)
+        public List<Expenses> GetExpenses()
+        {
+            var expenses = ExpensesManager.Instance.GetExpenses();
+            return expenses;
+        }
+
+        [Route("{id}")]
+        [HttpGet]
+        public Expenses ExpensesGetById(int id)
         {
             return ExpensesManager.Instance.GetExpensesById(id);
         }
 
-        [Route("create")]
+        [Route("")]
         [HttpPost]
         public void ExpensesPost([FromBody]Expenses expense)
         {

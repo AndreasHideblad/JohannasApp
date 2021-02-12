@@ -187,3 +187,6 @@ C:\Users\SEVON\Desktop\Projects\JohannasApp\JohannasApp\JohannasApp\obj\Debug\Jo
 C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.Initial.resources
 C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.csproj.GenerateResource.cache
 C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.Addedincome.resources
+C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.AddedrequiredExpCat.resources
+C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.Reversed.resources
+C:\Users\andre\Documents\Anteckningar\Kurs 4\JohannasApp\JohannasApp\JohannasApp\obj\Debug\JohannasApp.Migrations.Removedvirtual.resources
