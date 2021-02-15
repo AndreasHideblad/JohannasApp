@@ -36,6 +36,7 @@ namespace JohannasApp.Managers
             using (var db = new JohannaContext())
             {
                 var expenses = db.Expenses.Include(e => e.expensesCategories).ToList();
+                //var expenses = db.Expenses.ToList();
                 return expenses;
             }
         }
@@ -44,6 +45,11 @@ namespace JohannasApp.Managers
         {
             using (var db = new JohannaContext())
             {
+                var category = db.ExpensesCategories.FirstOrDefault(e => e.name == expenses.expensesCategories.name);
+                if (category != null)
+                {
+                    expenses.expensesCategories = category;
+                }
                 db.Expenses.AddOrUpdate(expenses);
                 db.SaveChanges();
             }        

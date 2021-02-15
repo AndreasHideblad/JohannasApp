@@ -5,7 +5,7 @@ expensesForm.onsubmit = (e) => {
     let expensesObj = {
       name: e.target[0].value,
       price: e.target[1].value,
-      ExpensesCategories: e.target[2].value
+      expensesCategories: {name: e.target[2].value}
     }
   
     fetch('https://localhost:44399/Expenses', {

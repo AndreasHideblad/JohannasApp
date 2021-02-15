@@ -24,12 +24,6 @@ namespace JohannasApp.Controllers
             var category = ExpensesCategoryManager.Instance.GetExpensesCategories();
             return category;
         }
-            //if (category != null)
-            //{
-                //return Ok(category);
-            //}
-            //else
-                //return NotFound();
 
         [Route("{id}")]
         [HttpGet] 
@@ -38,12 +32,18 @@ namespace JohannasApp.Controllers
             return ExpensesCategoryManager.Instance.GetExpensesCategoryById(id);
         }
 
-        [Route("")]
-        [HttpPost]
-        public void ExpensesCategoriesPost([FromBody]ExpensesCategory categories)
-        {
-            ExpensesCategoryManager.Instance.CreateExpensesCategory(categories);
-        }
+        //[HttpGet]
+        //public ExpensesCategory GetCategoryByName(string name)
+        //{
+        //    return ExpensesCategoryManager.Instance.GetExpensesCategoryByName(name);
+        //}
+
+        //[Route("")]
+        //[HttpPost]
+        //public void ExpensesCategoriesPost([FromBody]ExpensesCategory categories)
+        //{
+        //    ExpensesCategoryManager.Instance.CreateExpensesCategory(categories);
+        //}
 
         // PUT: api/ExpensesCategory/5
         public void Put(int id, [FromBody]string value)

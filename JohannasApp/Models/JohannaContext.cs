@@ -11,7 +11,7 @@ namespace JohannasApp
     {
         public JohannaContext() : base("name=JohannasApp")
         {
-
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<User> Users { get; set; }
