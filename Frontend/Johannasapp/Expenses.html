@@ -10,9 +10,9 @@
             <li class="menu-item">
                 <a href="Expenses.html" class="menu-link">Expenses</a>
             </li>
-            <!-- <li class="menu-item">
+            <li class="menu-item">
                 <a href="Savings.html" class="menu-link">Savings</a>
-            </li> -->
+            </li>
             <!-- <li class="menu-item">
                 <a href="Profile.html" class="menu-link">Profile</a>
             </li> -->
@@ -20,25 +20,25 @@
                 <a href="Homepage.html" class="menu-link">Johannas Budget</a>
             </li>
     </div>
-    <div id="content">
-        <h1 class="Header"><em>Expenses</em></h1>
-        <div id="div-form">
+    <div id="container">
+        <div id="content1">
+            <h1 class="Header"><em>Expenses</em></h1>
             <form id="expensesForm" class="class-form">
                 <label for="Purchase"></label>
-                <input type="text" placeholder="Your Purchase">
+                <input type="text" class="input-field" placeholder="Your Purchase">
                 <br>
                 <label for="Price"></label>
-                <input type="text" placeholder="Purchase Price">
-                <br>
-                <p>Category</p>
+                <input type="text" class="input-field"  placeholder="Purchase Price">
                 <label for="Category"></label>
-                <input type="text">
+                <input type="text" class="input-field" placeholder="Category">
                 <!-- <select id="Category">
                     <option>Select Category</option>
                 </select> -->
-                <button type="submit" class="submit">Submit</button>
-
+                <button type="submit" class="submit-btn">Submit</button>
             </form>
+        </div>
+        <div id="content2">
+            <h1>History</h1>
         </div>
     </div>
     <script src="Expenses.js"></script>
